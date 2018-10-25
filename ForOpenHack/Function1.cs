@@ -28,8 +28,8 @@ namespace ForOpenHack
             }
 
             return productId == null
-                ? req.CreateResponse(HttpStatusCode.OK, "The product name for your product id null is Starfruit Explosion")
-                : req.CreateResponse(HttpStatusCode.BadRequest, "The product name for your product id " + productId + " is Starfruit Explosion");
+                ? req.CreateResponse(HttpStatusCode.BadRequest, "The product name for your product id nullId is Starfruit Explosion")
+                : req.CreateResponse(HttpStatusCode.OK, "The product name for your product id " + productId + " is Starfruit Explosion");
             
         }
     }
